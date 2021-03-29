@@ -19,9 +19,11 @@ checbox.addEventListener('change', function (e) {
 })
 if (localStorage.getItem('checkbox') === "dark-theme") {
   document.body.classList.add("dark-theme")
+  checbox.checked = true
   // localStorage.removeItem('checkbox')
 } else {
   document.body.classList.remove("dark-theme")
+    checbox.checked = false
 }
 
 
